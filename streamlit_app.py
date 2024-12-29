@@ -3,7 +3,7 @@ import requests
 
 st.set_page_config(
     layout="wide", 
-    page_title="🤖 EDA AUTOMATION", 
+    page_title="EDA AUTOMATION", 
     page_icon="📂"
 )
 # Function to fetch raw CSS from GitHub
@@ -31,7 +31,7 @@ st.sidebar.header("Upload Your File")
 uploaded_file = st.sidebar.file_uploader("Choose a file", type=["csv"])
 
 # Display content on the main page
-st.title("File Upload and Display")
+st.title("🤖 EDA Automation")
 
 if uploaded_file is not None:
     st.success("File uploaded successfully!")
