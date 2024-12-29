@@ -1,4 +1,17 @@
 import streamlit as st
+import requests
+
+def github_css(url):
+    """Load CSS from a GitHub-hosted file."""
+    try:
+        response = requests.get(url)
+        response.raise_for_status()  # Ensure the request was successful
+        st.markdown(f"<style>{response.text}</style>", unsafe_allow_html=True)
+    except requests.exceptions.RequestException as e:
+        st.error(f"Failed to load CSS from GitHub: {e}")
+
+# URL of the CSS file on GitHub (raw URL)
+github_css("https://github.com/jaisai2512/frontend/blob/main/style.css")
 
 # Set page layout
 st.set_page_config(layout="wide")
