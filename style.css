@@ -5,12 +5,35 @@ main {
     font-family: Arial, sans-serif;
 }
 
-/* Sidebar Styles */
-[data-testid="stSidebar"] {
-    background-color: #e6f7ff;
-    color: #004080;
-    font-weight: bold;
-}
+ [data-testid="stSidebar"] {
+            background-color: #f0f2f6; /* Light background */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Style the upload box */
+[data-testid="stFileUploadDropzone"] {
+            background-color: #ffffff; /* White background */
+            border: 2px dashed #4a90e2; /* Dashed border with a blue shade */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Highlight on hover */
+[data-testid="stFileUploadDropzone"]:hover {
+            background-color: #e6f3ff; /* Slight blue highlight */
+            border-color: #007BFF; /* Change border color */
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Add shadow */
+        }
+
+        /* Style text inside the upload box */
+[data-testid="stFileUploadDropzone"] > div {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333333;
+        }
+       
 
 /* Header Title */
 h1 {
