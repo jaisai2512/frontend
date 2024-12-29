@@ -11,7 +11,7 @@ main {
             border-radius: 10px;
         }
 .stFileUploader button {
-            background-color: #4CAF50;
+            background-color: #4CAF50;  /* Green background */
             color: white;
             border-radius: 8px;
             border: none;
@@ -19,8 +19,9 @@ main {
             font-size: 16px;
             cursor: pointer;
         }
+        /* Style the button hover effect */
         .stFileUploader button:hover {
-            background-color: #45a049;
+            background-color: #45a049;  /* Slightly darker green */
         }
 
         /* Style the file uploader label */
@@ -34,7 +35,6 @@ main {
         .stFileUploader {
             margin-top: 20px;
         }
-
 /* Header Title */
 h1 {
     color: #0056b3;
