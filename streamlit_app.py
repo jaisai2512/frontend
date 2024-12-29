@@ -27,7 +27,7 @@ st.markdown(github_css(css_url), unsafe_allow_html=True)
 # Set page layout
 
 # Create a sidebar for file upload
-st.sidebar.header("Upload Your File")
+st.sidebar.header("📁 Upload Your File")
 uploaded_file = st.sidebar.file_uploader("Choose a file", type=["csv"])
 
 # Display content on the main page
