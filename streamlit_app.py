@@ -1,6 +1,11 @@
 import streamlit as st
 import requests
 
+st.set_page_config(
+    layout="wide", 
+    page_title="File Upload and Display", 
+    page_icon="📂"
+)
 def github_css(url):
     """Load CSS from a GitHub-hosted file."""
     try:
@@ -14,7 +19,6 @@ def github_css(url):
 github_css("https://github.com/jaisai2512/frontend/blob/main/style.css")
 
 # Set page layout
-st.set_page_config(layout="wide")
 
 # Create a sidebar for file upload
 st.sidebar.header("Upload Your File")
