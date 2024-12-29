@@ -3,7 +3,7 @@ import requests
 
 st.set_page_config(
     layout="wide", 
-    page_title="File Upload and Display", 
+    page_title="🤖 EDA AUTOMATION", 
     page_icon="📂"
 )
 # Function to fetch raw CSS from GitHub
