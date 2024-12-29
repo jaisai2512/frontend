@@ -10,6 +10,30 @@ main {
             padding: 20px;
             border-radius: 10px;
         }
+.stFileUploader button {
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 8px;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .stFileUploader button:hover {
+            background-color: #45a049;
+        }
+
+        /* Style the file uploader label */
+        .stFileUploader div {
+            font-size: 18px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        /* Add some spacing and style the widget container */
+        .stFileUploader {
+            margin-top: 20px;
+        }
 
 /* Header Title */
 h1 {
