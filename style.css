@@ -5,6 +5,12 @@ main {
     font-family: Arial, sans-serif;
 }
 
+[data-testid="stSidebar"] {
+            background-color: #f0f2f6; /* Light background */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
  
         /* Style the upload box */
 /* Customize the file upload box */
