@@ -6,17 +6,23 @@ st.set_page_config(
     page_title="File Upload and Display", 
     page_icon="📂"
 )
+# Function to fetch raw CSS from GitHub
 def github_css(url):
-    """Load CSS from a GitHub-hosted file."""
     try:
         response = requests.get(url)
-        response.raise_for_status()  # Ensure the request was successful
-        st.markdown(f"<style>{response.text}</style>", unsafe_allow_html=True)
-    except requests.exceptions.RequestException as e:
-        st.error(f"Failed to load CSS from GitHub: {e}")
+        if response.status_code == 200:
+            return f"<style>{response.text}</style>"
+        else:
+            return f"<style>/* Failed to load CSS: {response.status_code} */</style>"
+    except Exception as e:
+        return f"<style>/* Error loading CSS: {e} */</style>"
 
-# URL of the CSS file on GitHub (raw URL)
-github_css("https://github.com/jaisai2512/frontend/blob/main/style.css")
+# URL to the raw CSS file on GitHub
+css_url = "https://raw.githubusercontent.com/jaisai2512/frontend/main/style.css"
+
+# Inject the CSS into the Streamlit app
+st.markdown(github_css(css_url), unsafe_allow_html=True)
+
 
 # Set page layout
 
