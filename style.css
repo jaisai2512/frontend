@@ -12,28 +12,31 @@ main {
         }
 
         /* Style the upload box */
+/* Customize the file upload box */
 [data-testid="stFileUploadDropzone"] {
-            background-color: #ffffff; /* White background */
-            border: 2px dashed #4a90e2; /* Dashed border with a blue shade */
-            border-radius: 10px; /* Rounded corners */
-            padding: 20px;
-            transition: all 0.3s ease-in-out;
-        }
+    background-color: #000000;  /* Black background */
+    border: 2px solid #ffffff;  /* White border */
+    border-radius: 15px;         /* Rounded corners */
+    padding: 25px;               /* Space inside the box */
+    transition: all 0.3s ease-in-out;  /* Smooth transition for hover effect */
+    text-align: center;            /* Center text inside the box */
+}
 
-        /* Highlight on hover */
+/* Highlight on hover */
 [data-testid="stFileUploadDropzone"]:hover {
-            background-color: #e6f3ff; /* Slight blue highlight */
-            border-color: #007BFF; /* Change border color */
-            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Add shadow */
-        }
+    background-color: #333333; /* Dark gray background on hover */
+    border-color: #00FF00;     /* Green border color on hover */
+    box-shadow: 0 4px 10px rgba(0, 255, 0, 0.3); /* Green shadow on hover */
+}
 
-        /* Style text inside the upload box */
+/* Style the text inside the upload box */
 [data-testid="stFileUploadDropzone"] > div {
-            font-size: 16px;
-            font-weight: bold;
-            color: #333333;
-        }
-       
+    font-size: 18px;           /* Increase font size */
+    font-weight: bold;         /* Bold text */
+    color: #ffffff;            /* White text color */
+    margin-top: 10px;           /* Spacing between text and border */
+}
+
 
 /* Header Title */
 h1 {
