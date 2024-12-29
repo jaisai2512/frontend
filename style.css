@@ -11,31 +11,6 @@ main {
             border-radius: 10px;
         }
 
- /* Customize the file upload box */
-.stFileUploadDropzone {
-    background-color: #000000;  /* Black background */
-    border: 2px solid #ffffff;  /* White border */
-    border-radius: 15px;         /* Rounded corners */
-    padding: 25px;               /* Space inside the box */
-    transition: all 0.3s ease-in-out;  /* Smooth transition for hover effect */
-    text-align: center;            /* Center text inside the box */
-}
-
-/* Highlight on hover */
-.stFileUploadDropzone:hover {
-    background-color: #333333; /* Dark gray background on hover */
-    border-color: #00FF00;     /* Green border color on hover */
-    box-shadow: 0 4px 10px rgba(0, 255, 0, 0.3); /* Green shadow on hover */
-}
-
-/* Style the text inside the upload box */
-.stFileUploadDropzone div {
-    font-size: 18px;           /* Increase font size */
-    font-weight: bold;         /* Bold text */
-    color: #ffffff;            /* White text color */
-    margin-top: 10px;           /* Spacing between text and border */
-}
-
 /* Header Title */
 h1 {
     color: #0056b3;
